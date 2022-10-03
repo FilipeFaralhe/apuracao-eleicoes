@@ -10,18 +10,15 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="resources/css/reset.css" rel="stylesheet">
-        <!-- Styles -->
 
+        <!-- Styles -->
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
                 font-weight: bold;
                 font-size: 1.5em;
             }
-            .information {
-                text-align: center;
-            }
-            tr {
+            .information, tr {
                 text-align: center;
             }
             .candidates {

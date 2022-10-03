@@ -7,9 +7,13 @@ use GuzzleHttp\Client;
 
 class DetectionController {
 
-    public function detection() {
+    public function detection(): object {
         $client  = new Client();
-        $request = $client->request('GET', 'https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json');
+
+        do {
+            $request = $client->request('GET', 'https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json');
+        } while ($request->getStatusCode() === '200');
+
         $content = json_decode($request->getBody()->getContents());
 
         $item = [];
