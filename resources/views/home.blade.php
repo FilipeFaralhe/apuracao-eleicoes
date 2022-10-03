@@ -16,6 +16,7 @@
             body {
                 font-family: 'Nunito', sans-serif;
                 font-weight: bold;
+                font-size: 1.5em;
             }
             .information {
                 text-align: center;
@@ -42,7 +43,7 @@
     </head>
     <body>
         <div class="information">
-            <h1>Apurações Eleições 2022 - {{ $item['information']['date'] }} {{ $item['information']['hour'] }}</h1>
+            <h1>Apurações das Eleições 2022 - {{ $item['information']['date'] }} {{ $item['information']['hour'] }}</h1>
             <h2>Porcentagem de votos apurados:  {{ $item['information']['percentage_total'] }}%</h2>
         </div>
         <div class="candidates">
